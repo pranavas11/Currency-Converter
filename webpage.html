@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCurrency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body onload="feature()">
+    <dialog id="new-feature">
+        <h1 style="display: flex; justify-content: center; color: darkcyan;"><u>NEW FEATURE</u></h1><br>
+        <b><h3 style="display: flex; justify-content: center; font-size: large;">You can now swap currencies using the "swap arrows" button.</h3></b><br>
+        <button id="ok"><b>OK!</b></button>
+    </dialog>
+
+    <script>
+        function feature() {
+            let dialog = document.getElementById("new-feature");
+            dialog.showModal();
+            document.getElementById("ok").addEventListener("click", function() {
+                dialog.close();
+            });
+        }
+    </script>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="heading">
+                <h1>CURRENCY CONVERTER</h1>
+            </div>
+
+            <div class="rates">
+                <div class="rate1"></div>
+                <div class="rate2"></div>
+            </div>
+
+            <div class="main">
+                <div class="initial-rate">
+                    <div class="options">
+                        <b><label for="currency" style="color: navy;">Choose Currency 1:</label></b> <br><br>
+                        <select name="currency" id="currency"></select>
+                        <br><br><br>
+                    </div>
+
+                    <div class="input">
+                        <input type="number" min="1">
+                    </div>
+                </div>
+
+                <span class="material-icons swap" style="font-size: 50px;">swap_horiz</span>
+
+                <div class="target-rate">
+                    <div class="options">
+                        <b><label for="currency" style="color: orange;">Choose Currency 2:</label></b> <br><br>
+                        <select name="currency" id="currency"></select>
+                        <br><br><br>
+                    </div>
+
+                    <div class="input">
+                        <input disabled type="number">
+                        <br><br><br><br>
+                    </div>
+                </div>
+            </div>
+
+            <button class="result">CONVERT</button> <br><br>
+            <button class="clear">CLEAR</button>
+        </div>
+
+        <div class="information">
+            <div class="instructions">
+                <h3>INSTRUCTIONS</h3>
+                <h5>1. Choose your two desired currencies from the dropdown menu.</h5>
+                <h5>2. Enter the desired amount inside the textbox on the left-hand side.</h5>
+                <h5>3. Click "Convert" to see the conversion rate.</h5>
+                <h5>4. Click "Clear" to clear the screen.</h5>
+                <h5>5. Click the swap arrow in between the two textboxes to swap the currency conversions.</h5>
+            </div>
+
+            <br>
+
+            <div class="currency-information">
+                <div class="currency1">
+                    <h3><u>Currency 1 Information</u></h3>
+                    <p id="USD">The United States dollar (USD) is the official currency of the United States and several other countries. The Coinage Act of 1792 introduced the U.S. dollar. The U.S. dollar was originally defined under a bimetallic standard of 371.25
+                        grains (24.057 g) fine silver or, from 1837, 23.22 grains (1.505 g) fine gold. The Gold Standard Act of 1900 linked the dollar solely to gold. From 1934, its equivalence to gold was revised to $35 per troy ounce. Since 1971 all
+                        links to gold have been repealed. Read more about USD <a href="https://en.wikipedia.org/wiki/United_States_dollar">here</a>.</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="currency2">
+                    <h3><u>Currency 2 Information</u></h3>
+                    <p id="GBP">Sterling (ISO code GBP) is the official currency of the United Kingdom and its associated territories. The pound (sign: £) is the main unit of sterling, and the currency itself may be referred to by the compound noun pound sterling
+                        or the term British pound, although neither of these are official names of the currency. One pound sterling is subdivided into 100 pence sterling. Sterling is the world's oldest currency that is still in use and that has been in
+                        continuous use since its inception. Read more <a href="https://en.wikipedia.org/wiki/Pound_sterling">here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="faq">
+        <h1>FAQ</h1>
+        <h3>Have Questions? Visit the FAQ page <a href="">here</a>.</h3>
+    </div>
+
+    <script src="currency_converter.js"></script>
+</body>
+
+</html>

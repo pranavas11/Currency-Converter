@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&family=Ubuntu:wght@500&family=Yantramanav:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px;
+    background-image: linear-gradient(to bottom, #b84030, #3f546c);
+}
+
+#new-feature {
+    background-color: wheat;
+    color: blue;
+    height: 35%;
+    width: 45%;
+    border-width: 15px;
+}
+
+#ok {
+    background-color: darkkhaki;
+    color: darkred;
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+}
+
+.container {
+    background-color: rgb(53, 139, 65);
+    height: 490px;
+    width: 570px;
+    padding: 50px;
+    box-shadow: 25px 25px 25px rgba(35, 35, 35, 35);
+    border-radius: 5px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.heading {
+    color: #FFD700;
+    text-align: center;
+    font-size: medium;
+}
+
+.rates {
+    width: 270px;
+    padding-left: 35%;
+    border: 5px solid tomato;
+    background-color: white;
+    margin-left: 50px;
+}
+
+.rate1 {
+    color: firebrick;
+}
+
+.rate2 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: mediumturquoise;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.swap {
+    align-self: flex-end;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 55px;
+    color: aqua;
+    cursor: pointer;
+}
+
+.options select {
+    width: 100px;
+    padding: 3px;
+}
+
+.input input {
+    all: unset;
+    display: inline-block;
+    height: 35px;
+    width: 175px;
+    padding: 5px;
+    background-color: gainsboro;
+    color: mediumblue;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 500;
+    appearance: textarea;
+}
+
+.result {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: firebrick;
+    color: chartreuse;
+    outline-color: red;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.result:active {
+    background-color: darkgoldenrod;
+}
+
+.clear {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: burlywood;
+    color: orangered;
+    outline-color: red;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.clear:active {
+    background-color: black;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.instructions {
+    color: lime;
+    background-color: rgb(51, 81, 117);
+    height: 255px;
+    width: 650px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    vertical-align: middle;
+    box-shadow: 25px 25px 25px rgba(35, 35, 35, 35);
+    border-radius: 5px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.currency-information {
+    color: maroon;
+    background-color: rgb(51, 117, 103);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 300px;
+    width: 675px;
+    /* padding-left: 25px;
+    padding-top: 10px;
+    */
+    box-shadow: 25px 25px 25px rgba(35, 35, 35, 35);
+    border-radius: 5px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#USD {
+    width: 325px;
+    color: darkorange;
+}
+
+.vertical-line {
+    border-left: 3px solid black;
+    height: 300px;
+    position: absolute;
+    left: 75%;
+    margin-left: -3px;
+    top: 53%;
+}
+
+#GBP {
+    width: 300px;
+    color: darkorange;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
