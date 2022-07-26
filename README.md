@@ -28,4 +28,4 @@ This repository contains the source code for my "Currency Converter" program wri
   <li>Finally, Server.js receives and writes the JSON data to a JSON file, which is then sent over the network to the client.</li>
 </ol>
 
-![Microservice Design Flowchart](Currency Converter Microservice - Flowchart.png)
+![Microservice Design Flowchart](Microservice_Flowchart.png)
