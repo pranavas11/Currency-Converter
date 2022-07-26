@@ -12,6 +12,7 @@ let input1 = input[0];
 let input2 = input[1];
 
 let rates = {};
+let data = {};
 
 const api_url = "https://v6.exchangerate-api.com/v6/5a9d162dd5f3cf2295879f06/latest/USD";
 
@@ -42,6 +43,11 @@ function convert_rates(val, from_currency, to_currency) {
 function display_currency() {
     let currency1 = option1.value;
     let currency2 = option2.value;
+
+    data.currency1 = currency1;
+    data.currency2 = currency2;
+    console.log(JSON.stringify(data));
+    fetch("/json_data", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
 
     let val = convert_rates(1, currency1, currency2);
 
@@ -92,12 +98,6 @@ document.querySelector(".swap").addEventListener("click", () => {
 })
 
 /*
-API Links:
-http://www.floatrates.com/feeds.html
-https://www.formget.com/real-time-currency-rates-api/#free-currency-converter-api
-https://currencylayer.com/
-https://free.currencyconverterapi.com/
-https://openbase.com/js/globalize
-
-Google Search: latest currency rates api; currency.h stl library
+API Link:
+https://api.exchangerate.host/latest?base=USD
 */

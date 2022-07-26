@@ -168,7 +168,7 @@ body {
 
 #USD {
     width: 325px;
-    color: darkorange;
+    color: white;
 }
 
 .vertical-line {
@@ -177,17 +177,25 @@ body {
     position: absolute;
     left: 75%;
     margin-left: -3px;
-    top: 53%;
+    top: 61%;
 }
 
 #GBP {
     width: 300px;
-    color: darkorange;
+    color: white;
 }
 
 .faq {
-    display: flex;
+    background-color: deepskyblue;
+    /*display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 3rem;
+    justify-content: center;*/
+    height: 700px;
+    width: 820px;
+    padding-left: 50%;
+    padding-bottom: 3%;
+    margin-top: -3.3rem;
+    box-shadow: 25px 25px 25px rgba(35, 35, 35, 35);
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
 }

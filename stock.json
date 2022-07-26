@@ -1,0 +1,8 @@
+{
+    "name": "Facebook",
+    "price": 182.15,
+    "quantity": 5,
+    "from_currency": "USD",
+    "to_currency": "EUR",
+    "conversion_rate": 893.17255
+}
