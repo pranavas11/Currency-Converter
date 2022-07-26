@@ -28,4 +28,22 @@ This repository contains the source code for my "Currency Converter" program wri
   <li>Finally, Server.js receives and writes the JSON data to a JSON file, which is then sent over the network to the client.</li>
 </ol>
 
+<h3>Example Call</h3>
+<p><b>NOTE: The left side of the arrows below is the terminal command and the right side of the arrows is the actual output.</b></p><br>
+<ol type="A">
+	<li>On tab 1 of your terminal, run the following code: `node server.js`.</li>
+	<ol>
+		<li>node server.js   --->   prints "Server is ready and listening on port 5000. Press any key to start sending the stock data!"</li>
+	</ol>
+	<li>On tab 2 of your terminal, run the following code: `node worker.js`.</li>
+	<ol>
+		<li>node worker.js   --->   prints "Connected to port 5000! Server is ready and listening on port 5005! Press any key to start sending the JSON data."</li>
+	</ol>
+	<li>On tab 1 of your terminal, press enter to send the JSON data.</li>
+	<li>JSON data is received and printed in tab 2 of your terminal.</li>
+	<li>Press enter in tab 2 of your terminal to send the "Updated JSON Data".</li>
+	<li>Press enter twice in tab 1 of your terminal to print the updated JSON data.</li>
+</ol>
+
+<h3>UML Sequence Diagram</h3>
 ![Microservice Design Flowchart](Microservice_Flowchart.png)
