@@ -29,7 +29,7 @@ This repository contains the source code for my "Currency Converter" program wri
 </ol>
 
 <h3>Example Call</h3>
-<p><b>NOTE: The left side of the arrows below is the terminal command and the right side of the arrows is the actual output.</b></p><br>
+<p><b>NOTE: The left side of the arrows below is the terminal command and the right side of the arrows is the actual output.</b></p>
 <ol type="A">
 	<li>On tab 1 of your terminal, run the following code: `node server.js`.</li>
 	<ol>
@@ -46,4 +46,5 @@ This repository contains the source code for my "Currency Converter" program wri
 </ol>
 
 <h3>UML Sequence Diagram</h3>
+
 ![Microservice Design Flowchart](Microservice_Flowchart.png)
